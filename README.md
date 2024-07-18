@@ -16,7 +16,7 @@ use : npx prisma studio to have a user interface of the database in browser.
 
 ### 1. User Management
 
-#### Task 1: Create SignUp Endpoint
+#### Task 1: Create SignUp Endpoint: Janet
 
 - **Description**: Create an endpoint for user registration.
 - **Requirements**:
@@ -25,7 +25,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/auth/signup`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 2: Create Login Endpoint
+#### Task 2: Create Login Endpoint: PANDU
 
 - **Description**: Create an endpoint for user login.
 - **Requirements**:
@@ -34,7 +34,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/auth/login`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 3: Create Forgot Password Endpoint
+#### Task 3: Create Forgot Password Endpoint: Joseph
 
 - **Description**: Create an endpoint for password recovery.
 - **Requirements**:
@@ -43,7 +43,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/auth/forgot-password`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 4: Create Update User Details Endpoint
+#### Task 4: Create Update User Details Endpoint: Emmanuel
 
 - **Description**: Create an endpoint for updating user details.
 - **Requirements**:
@@ -56,7 +56,7 @@ use : npx prisma studio to have a user interface of the database in browser.
 
 ### 2. Product Management
 
-#### Task 5: Create Products Endpoint
+#### Task 5: Create Products Endpoint: Sylvia
 
 - **Description**: Create an endpoint for adding new products.
 - **Requirements**:
@@ -65,7 +65,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/products`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 6: Fetch Products by UserId Endpoint
+#### Task 6: Fetch Products by UserId Endpoint: Jethro
 
 - **Description**: Create an endpoint to fetch products by user ID.
 - **Requirements**:
@@ -74,7 +74,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/products/user/:userId`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 7: Fetch All Products Endpoint
+#### Task 7: Fetch All Products Endpoint: Innocent
 
 - **Description**: Create an endpoint to fetch all products.
 - **Requirements**:
@@ -83,7 +83,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/products`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 8: Delete Products Endpoint
+#### Task 8: Delete Products Endpoint: Innocent
 
 - **Description**: Create an endpoint to delete a product.
 - **Requirements**:
@@ -92,7 +92,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/products/:productId`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 9: Update Products Endpoint
+#### Task 9: Update Products Endpoint:
 
 - **Description**: Create an endpoint to update a product.
 - **Requirements**:
@@ -101,7 +101,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/products/:productId`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 10: Fetch Product by ID Endpoint
+#### Task 10: Fetch Product by ID Endpoint:
 
 - **Description**: Create an endpoint to fetch a product by ID.
 - **Requirements**:
@@ -114,7 +114,7 @@ use : npx prisma studio to have a user interface of the database in browser.
 
 ### 3. Chat Management
 
-#### Task 11: Initialize Chat Endpoint
+#### Task 11: Initialize Chat Endpoint: Simeon
 
 - **Description**: Create an endpoint to initialize a chat.
 - **Requirements**:
@@ -123,7 +123,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/chat/init`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 12: Fetch Chats Endpoint
+#### Task 12: Fetch Chats Endpoint:
 
 - **Description**: Create an endpoint to fetch chats.
 - **Requirements**:
@@ -136,7 +136,7 @@ use : npx prisma studio to have a user interface of the database in browser.
 
 ### 4. Purchase Management
 
-#### Task 13: History of Purchases Endpoint
+#### Task 13: History of Purchases Endpoint:
 
 - **Description**: Create an endpoint to fetch the history of purchases.
 - **Requirements**:
@@ -145,7 +145,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/purchases/history`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 14: Purchase Endpoint
+#### Task 14: Purchase Endpoint:
 
 - **Description**: Create an endpoint to make a purchase.
 - **Requirements**:
@@ -158,7 +158,7 @@ use : npx prisma studio to have a user interface of the database in browser.
 
 ### 5. Order Management
 
-#### Task 15: Get All Orders for User Endpoint
+#### Task 15: Get All Orders for User Endpoint: Chibwe
 
 - **Description**: Create an endpoint to fetch all orders for a user.
 - **Requirements**:
@@ -167,7 +167,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/orders/user/:userId`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 16: Get All Orders Endpoint
+#### Task 16: Get All Orders Endpoint: Lubuto
 
 - **Description**: Create an endpoint to fetch all orders.
 - **Requirements**:
@@ -176,7 +176,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/orders`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 17: Get Order by ID Endpoint
+#### Task 17: Get Order by ID Endpoint:
 
 - **Description**: Create an endpoint to fetch an order by ID.
 - **Requirements**:
