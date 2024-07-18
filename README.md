@@ -6,6 +6,14 @@ This documentation outlines the tasks for interns. Each task involves creating v
 
 ---
 
+Each Intern is expected to configure the database details in the .env and then make a migration using the following commands:
+
+npx prisma generate
+
+npx prisma migrate dev
+
+use : npx prisma studio to have a user interface of the database in browser.
+
 ### 1. User Management
 
 #### Task 1: Create SignUp Endpoint
