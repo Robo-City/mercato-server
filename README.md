@@ -136,7 +136,7 @@ use : npx prisma studio to have a user interface of the database in browser.
 
 ### 4. Purchase Management
 
-#### Task 13: History of Purchases Endpoint:
+#### Task 13: History of Purchases Endpoint: Juma
 
 - **Description**: Create an endpoint to fetch the history of purchases.
 - **Requirements**:
