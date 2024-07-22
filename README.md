@@ -92,7 +92,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/products/:productId`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 9: Update Products Endpoint:
+#### Task 9: Update Products Endpoint: Andree
 
 - **Description**: Create an endpoint to update a product.
 - **Requirements**:
