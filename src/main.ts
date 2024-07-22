@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from "express";
 import cors from "cors";
+import authrouter from "./authserveice/authrouter"
 import morgan from "morgan";
 import compression from "compression";
 
@@ -11,6 +12,8 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(compression());
 
+
+app.use('/auth',authrouter);
 app.get("/", (_req: Request, res: Response) => {
   res.send("Server is On");
 });
