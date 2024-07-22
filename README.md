@@ -158,7 +158,7 @@ use : npx prisma studio to have a user interface of the database in browser.
 
 ### 5. Order Management
 
-#### Task 15: Get All Orders for User Endpoint: Chibwe
+#### Task 15: Get All Orders for User Endpoint: Chama Mupenda
 
 - **Description**: Create an endpoint to fetch all orders for a user.
 - **Requirements**:
