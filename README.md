@@ -101,7 +101,7 @@ use : npx prisma studio to have a user interface of the database in browser.
   - Define the route `/api/products/:productId`.
   - Ensure the endpoint can be consumed (e.g., via Postman or a frontend form).
 
-#### Task 10: Fetch Product by ID Endpoint:
+#### Task 10: Fetch Product by ID Endpoint:Charme
 
 - **Description**: Create an endpoint to fetch a product by ID.
 - **Requirements**:
