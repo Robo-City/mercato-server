@@ -21,15 +21,17 @@ enum Category {
 }
 
 model User {
-  id        Int        @unique @default(autoincrement())
-  firstname String
-  lastname  String
-  email     String     @unique
-  password  String
-  products  Products[]
-  orders    Orders[]
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
+  id               Int        @unique @default(autoincrement())
+  firstname        String
+  lastname         String
+  email            String     @unique
+  password         String
+  products         Products[]
+  orders           Orders[]
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+  resetToken       String? // Token for password reset
+  resetTokenExpiry DateTime? // Expiration time for the reset token
 }
 
 model Products {
