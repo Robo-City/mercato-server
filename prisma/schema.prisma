@@ -21,40 +21,51 @@ enum Category {
 }
 
 model User {
-  id        Int        @unique @default(autoincrement())
-  firstname String
-  lastname  String
-  email     String     @unique
-  password  String
-  products  Products[]
-  orders    Orders[]
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
+  id           Int        @id @default(autoincrement())
+  firstname    String
+  lastname     String
+  email        String     @unique
+  password     String
+  products     Product[]
+  orders       Order[]
+  chatInboxes  ChatInbox[]
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
 }
 
-model Products {
-  id          Int      @unique @default(autoincrement())
+model Product {
+  id          Int       @id @default(autoincrement())
   name        String
   description String
   quantity    Float
   price       Float
   available   Float
-  sold        Float    @default(0)
+  sold        Float     @default(0)
   category    Category
-  createdAt   DateTime @default(now())
-  orders      Orders[]
-  updatedAt   DateTime @updatedAt
-  User        User?    @relation(fields: [userId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
   userId      Int?
+  user        User?     @relation(fields: [userId], references: [id])
+  orders      Order[]
 }
 
-model Orders {
-  id         Int       @unique @default(autoincrement())
-  products   String[]
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime  @updatedAt
-  Products   Products? @relation(fields: [productsId], references: [id])
-  productsId Int?
-  User       User?     @relation(fields: [userId], references: [id])
-  userId     Int?
+model Order {
+  id          Int       @id @default(autoincrement())
+  products    String[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  productId   Int?
+  product     Product?  @relation(fields: [productId], references: [id])
+  userId      Int?
+  user        User?     @relation(fields: [userId], references: [id])
+}
+
+model ChatInbox {
+  id          Int       @id @default(autoincrement())
+  name        String
+  description String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  userId      Int?
+  user        User?     @relation(fields: [userId], references: [id])
 }

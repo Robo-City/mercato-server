@@ -2,6 +2,7 @@ import express, { Application, Request, Response } from "express";
 import cors from "cors";
 import morgan from "morgan";
 import compression from "compression";
+import chatinboxRouter from "./Chatinbox/router";
 
 const app: Application = express();
 const PORT = 2000;
@@ -10,6 +11,8 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 app.use(compression());
+
+app.use("/chat",chatinboxRouter)
 
 app.get("/", (_req: Request, res: Response) => {
   res.send("Server is On");
