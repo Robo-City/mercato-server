@@ -34,7 +34,7 @@ router.post('/forgot-password', validateDto(PasswordDto), async (req, res) => {
         data: { resetToken, resetTokenExpiry },
     });
 
-    const resetLink = `http://mercato.com/reset-password?token=${resetToken}`;
+    const resetLink = `http://yourapp.com/reset-password?token=${resetToken}`;
     await transporter.sendMail({
         to: email,
         subject: 'Password Reset',

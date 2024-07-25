@@ -1,5 +1,3 @@
-// src/middleware/validation.ts
-
 import { plainToClass } from 'class-transformer';
 import { validate, ValidationError } from 'class-validator';
 import { Request, Response, NextFunction } from 'express';
