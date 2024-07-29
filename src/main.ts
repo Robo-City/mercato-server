@@ -3,6 +3,7 @@ import cors from "cors";
 import morgan from "morgan";
 import compression from "compression";
 
+
 const app: Application = express();
 const PORT = 2000;
 
