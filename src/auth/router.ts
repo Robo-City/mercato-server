@@ -1,9 +1,8 @@
 import { Router } from 'express';
-import { forgotPassword, resetPassword } from './validation';
+import { forgotPassword } from './validation';
 
 const router = Router();
 
 router.post('/forgot-password', forgotPassword);
-router.post('/reset-password', resetPassword);
 
 export default router;

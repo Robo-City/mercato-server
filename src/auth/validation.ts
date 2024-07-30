@@ -2,11 +2,12 @@ import { Request, Response } from 'express';
 import { PrismaClient } from '@prisma/client';
 import crypto from 'crypto';
 import nodemailer from 'nodemailer';
-import { PasswordDto } from './passworddto';
+import { EmailDto } from './passworddto';
+import dotenv from 'dotenv'; 
+
+dotenv.config(); 
 
 const prisma = new PrismaClient();
-
-// Email transporter setup
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -16,9 +17,8 @@ const transporter = nodemailer.createTransport({
 });
 
 export const forgotPassword = async (req: Request, res: Response) => {
-    const { email } = req.body;
+    const { email } = req.body as EmailDto;
 
-    
     console.log(`Request body:`, req.body);
     console.log(`Searching for user with email: ${email}`); 
 
@@ -50,15 +50,4 @@ export const forgotPassword = async (req: Request, res: Response) => {
     });
 
     res.json({ message: 'Password reset link sent to your email' });
-};
-
-
-export const resetPassword = async (req: Request, res: Response) => {
-    const { token } = req.body as PasswordDto;
-
-    const user = await prisma.user.findFirst({ where: { resetToken: token } });
-    if (!user || !user.resetTokenExpiry || user.resetTokenExpiry < new Date()) {
-        return res.status(400).json({ message: 'Invalid or expired token' });
-    }
-  
 };

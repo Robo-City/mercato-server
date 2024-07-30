@@ -1,15 +1,7 @@
-import { IsEmail, IsString, IsNotEmpty } from 'class-validator';
+import { IsEmail, IsNotEmpty } from 'class-validator';
 
-export class PasswordDto {
+export class EmailDto {
     @IsEmail()
-  @IsNotEmpty()
-  email!: string;
-
-    @IsString()
     @IsNotEmpty()
-    token?: string; // Optional for ForgotPasswordDto
-
-    @IsString()
-    @IsNotEmpty()
-    newPassword?: string; // Optional for ResetPasswordDto
+    email!: string;
 }
